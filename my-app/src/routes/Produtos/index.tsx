@@ -7,7 +7,7 @@ import { RiDeleteBin6Line as Excluir } from "react-icons/ri";
 export default function Produtos() {
   document.title = "Produtos";
 
-  const web_app_url = "https://script.google.com/macros/s/AKfycbxIUihgcjhLMNyl90yYa4tLT9B1iDn4JyASe3SYBWF0X6sDzaNA8dom_dz6Nv5VV6W1YA/exec"
+  const web_app_url = import.meta.env.VITE_API_URL;
 
   //REF do DIALOG para o produto que será deletado:
   const dialogRef = useRef<HTMLDialogElement>(null);
